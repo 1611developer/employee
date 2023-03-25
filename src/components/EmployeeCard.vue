@@ -31,7 +31,7 @@ defineProps({
                    <p><strong>Previous Company: </strong>{{ employee.previous_company }}</p>
                 </div>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back font-light font-mono text-sm text-gray-700 hover:text-gray-900 transition-all duration-200">
                 <p><strong>Address:</strong></p>
                 <br>
                 <p>{{ employee.street_address }} {{ employee.city }}, {{ employee.state }}</p>
