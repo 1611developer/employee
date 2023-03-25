@@ -74,7 +74,7 @@ defineProps({
   text-align: center;
   background-color: rgb(204 251 241);
   width: auto;
-  height: 250px;
+  height: 260px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 
 }
@@ -115,6 +115,6 @@ defineProps({
   backface-visibility: hidden;
   background-color: rgb(204 251 241);
   border-radius: 5px;
-  height: 250px;
+  height: 260px;
 }
 </style>
