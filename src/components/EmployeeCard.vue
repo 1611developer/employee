@@ -71,8 +71,9 @@ defineProps({
 
 
 .flip-card {
+  text-align: center;
   background-color: transparent;
-  width: 320px;
+  width: auto;
   height: 250px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
