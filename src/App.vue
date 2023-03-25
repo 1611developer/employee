@@ -34,7 +34,7 @@ nav a {
   color: #2c3e50;
 }
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: rgb(45 212 191);
 }
 h2 {
   font-size: 20px;
