@@ -2,16 +2,15 @@
 import EmployeeCard from '@/components/EmployeeCard.vue'
 import TheFooter from '@/components/TheFooter.vue'
 import { ref, onMounted} from 'vue'
-import axios from 'axios'
+import EmployeeService from '@/services/EmployeeService.js';
 
 const employees = ref(null)
 
 
 onMounted(() => {
-  axios
-  .get('https://1611developer.github.io/employees/db.json')
+  EmployeeService.getEmployees()
   .then((response) => {
-    // console.log('events:', response.data)
+    // console.log('employees:', response.data)
     employees.value = response.data
   })
   .catch((error) => {
