@@ -74,8 +74,9 @@ defineProps({
   text-align: center;
   background-color: rgb(204 251 241);
   width: auto;
-  height: 280px;
+  height: 250px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
 }
 
 /* This container is needed to position the front and back side */
@@ -113,5 +114,7 @@ defineProps({
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   background-color: rgb(204 251 241);
+  border-radius: 5px;
+  height: 250px;
 }
 </style>
