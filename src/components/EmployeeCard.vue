@@ -31,7 +31,7 @@ defineProps({
                    <p><strong>Previous Company: </strong>{{ employee.previous_company }}</p>
                 </div>
               </div>
-              <div class="flip-card-back font-light font-mono text-sm text-gray-700 hover:text-gray-900 transition-all duration-200">
+              <div class="flip-card-back">
                 <p><strong>Address:</strong></p>
                 <br>
                 <p>{{ employee.street_address }} {{ employee.city }}, {{ employee.state }}</p>
@@ -72,9 +72,9 @@ defineProps({
 
 .flip-card {
   text-align: center;
-  background-color: transparent;
+  background-color: rgb(204 251 241);
   width: auto;
-  height: 250px;
+  height: 280px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -110,5 +110,8 @@ defineProps({
 .flip-card-back {
   color: black;
   transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  background-color: rgb(204 251 241);
 }
 </style>
